@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <script src="CALCULATOR.JS" defer></script>
+</head>
+<body>
+    <style>
+*,*::before,*::after{
+    box-sizing:border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    /* background: linear-gradient(to right,#00AAFF,#00FF6C); */
+    background: linear-gradient(to right,#00AAFF,#FFFFFF );
+
+}
+.calculator-grid{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: minmax(120px,auto) repeat(5,100px);
+}
+.calculator-grid > button{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(225, 225, 225, .75);
+}
+.calculator-grid> button:hover{
+    background-color: rgba(225, 225, 225, .999);
+}
+.span-two{
+    grid-column: span 2;
+}
+.output{
+    grid-column: 1/ -1 ;
+     background-color:rgba(0, 0, 0, .5);
+   justify-content:space-around;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    width: 500px;
+   align-content: center;
+padding-top: 80px;
+    margin-left: 500px;
+    
+  
+} 
+.output .previous-operand{
+    color: white;
+    font-size: 1.5rem;
+}
+.output .current-operand{
+    color: white;
+    font-size: 2.5rem;
+}
+.class-grid{
+    align-content: center;
+    justify-content: center;
+}
+
+
+
+
+    </style>
+
+ <div class="class-grid">
+    <div class="output">
+       <div data-previous-operand class="previous-operand"></div>
+       <div data-current-operand class="current-operand"></div>
+    </div>
+     </div>
+ 
+ <div class="calculator-grid">
+   
+<button  data-allclear class="span-two" >AC</button>
+<button  data-delete>DEL</button>
+ <button data-operation >/</button>
+ <button data-number>1</button>
+ <button data-number>2</button>
+ <button data-number>3</button>
+ <button data-operation>*</button>
+ <button data-number>4</button>
+ <button data-number >5</button>
+ <button data-number>6</button>
+ <button data-operation>+</button>
+ <button data-number>7</button>
+ <button data-number>8</button>
+ <button data-number>9</button>
+ <button data-operation>-</button>
+ <button data-number>.</button>
+ <button data-number>0</button>
+ <button data-equals  class="span-two"  >=</button> 
+</div>
+<script src="CALCULATOR.JS"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+ text.style.top =  50 + value* -0.5+ '%';

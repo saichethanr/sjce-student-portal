@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTS @ SJCE</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    overflow-x: hidden;
+    background: #fff;
+    min-height:100vh ;
+}
+#header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+#header .logo{
+    color:#094b65 ;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+#header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+#header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #094b65;
+    border-radius: 20px;
+
+}
+#header ul li a:hover,
+#header ul li a.active
+{
+    background: #094b65;
+    color: #fff;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#094b65,transparent);
+    z-index:10 ;
+
+
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    object-fit: cover;
+
+
+
+}
+section #text{
+    position: absolute;
+    color: #094b65;
+    font-size: 10vw;
+    text-align: center;
+    line-height: 0.55em;
+    font-family: 'Rancho', cursive;
+    transform: translateY(-50%);
+}
+section #text span{
+    font-size: 0.20em;
+    letter-spacing: 2px;
+    font-weight: 400;
+
+}
+#btn{
+   
+       text-decoration: none;
+display:inline-block;
+padding: 8px 30px;
+background: #fff;
+color: #094b65;
+font-size: 1.2em;
+font-weight: 500;
+letter-spacing: 2px;
+border-radius: 40px;
+transform: translateY(100px);
+   
+}
+.sec{
+    position: relative;
+    padding: 100px;
+    background: #094b65;
+}
+.sec h2{
+    font-size: 3.5em;
+    color:#fff;
+    margin-bottom: 10px;
+
+}
+.sec p{
+    font-size: 1em;
+    color:black;
+}
+.imgd{
+    width: 30vh;
+    height: 30vh;
+}
+.jay{
+    display: flex;
+    padding-left: 60vh;
+}
+.jayciana{
+    background:rgba(0,0,0,0.7);
+    background: url("https://wallpaperaccess.com/full/1898603.jpg");
+       /* background: url("jayciana.jpeg");  */
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.jay1{
+    color:black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    text-decoration:underline;
+    padding-left: 75vh;
+
+    
+}
+.jay2{
+  
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    color: black;
+}
+
+
+</style>
+<body>
+   <header id="header">
+       <a href="#" class="logo">EVENTS @ SJCE</a>
+       <UL>
+    <li><a href="#" class="active">HOME</a></li>
+    <li><a href="#">NOTIFICATION</a></li>
+    <li><a href="#">CONTACT</a></li>
+   
+
+       </UL>
+
+   </header>
+   <section>
+       <h2  id="text" ><span>its time for a new</span><br>Adventure</h2>
+       <img src="bird1.png" id="bird1">
+       <img src="bird2.png" id="bird2">
+       <img src="forest.png" id="forest">
+
+       <a href="" id="btn">Explore</a>
+       <img src="rocks.png" id="rocks">
+       <img src="water.png" id="water">
+   </section>
+   <div class="sec">
+       <!-- the content should be written here -->
+       <h2>AN OVERVIEW OF ALL THE EVENTS AT SJCE</h2>
+       <p>SJCE is undoubtedly one of the best engineering colleges in Karnataka. The only reason it's not as popular as BMS or RV is because of the fact that it's in Mysore and not in Bangalore. Some of the things I like about this college is -
+
+        The Campus - It is very beautiful and well maintained.
+        Staff - It mainly depends on what branch you take up, but generally all the branches have some exceptionally good professors. I'm in EC and some of the professors that I know are very good in teaching. They also support us and motivate us.
+        Seniors - While joining engineering everyone will be scared about seniors to some extent. Even I was. But here the seniors are infact very friendly. They take care of their juniors and help us whenever we ask them anything.
+        Extracurricular activities - There are many clubs in our college like IEEE-SJCE (student branch of IEEE), LCC(Linux), TESLA, PHOTO-ON(Photography) , SAHAS(Adventure), AEROJC (RC plane making) etc. We can be a part of any of these clubs and they are all very active throughout the semester.
+        Placements - This college has a very good placement record.
+        Thing that we don't like here -
+        
+        5 Internals - Although we don't like writing 5 internals per semester, it's a true fact that this helps us in our final exam.
+        So, considering all this I believe that this college is one of the finest in Karnataka. It is a proud feeling for me to say that I'm from SJCE.
+        
+        PS - It's JSS Science and Technology University from now on and not SJCE. This is also one of the added advantage that it's a private university now and not under VTU.
+        
+        IEEE-SJCE is considered as one of the best student branches of IEEE in all of Bangalore section. AeroJC has represented our college in the international RC plane building competition and was within top 10 worldwide.
+        
+        Edit 1: So, now I'm in 5th sem.. and having experienced 2 years of engineering here, I have no regrets for joining SJCE. Learnt a lot from my super-seniors. They taught me a lot, helped me when I needed it, but most importantly, they became my brothers. It's been one amazing journey till here, hoping that it continues the same way :D
+        
+        As a part of AeroJC, I got an opportunity to go to Los Angeles in 2nd year with seniors. We ended up winning 3rd place for technical presentation worldwide and got to see one of the most beautiful cities in the world. I couldn't have asked for anything better :')</p>
+<hr>
+<br>
+<br>
+  
+<div class="jayciana">
+    <h1 class="jay1">JAYCIANA 2022</h1>
+   <p class="jay2">  Jayciana
+        Jayciana is the annual fest of Sri Jaychamarajendra college of engineering, Mysore. Every year, this cultural extravaganza is held during the even semester. Amazing performances by world famous bands, artists and celebrities, make Jayciana one of the biggest college fests in the region.
+        Usually held during the month of April, it is that time of the year when you can feel the excitement building up. It is time for Mysoreans to brace themselves for the biggest cultural extravaganza the state has to offer. It is time for non-Mysoreans to gaze, starry-eyed, at the ‘ostentatiousness’, the razzle-dazzle of the flagship event of Sri Jayachamarajendra College of Engineering – Jayciana 2022! Jayciana is arguably the best and the biggest college fest in karnataka. In fact, to call it a college fest would be an understatement – after all, SJCE is not just a college, it is a Brand name.</p>
+        <div class="jay">
+    <video width="600" height="400" controls class="vidjay">
+        <source src="WhatsApp Video 2022-04-10 at 9.42.38 AM.mp4" type="video/mp4">
+    </video>
+    <!-- <img src="jay.jpeg" alt="" width="500" height="400"> -->
+</div>
+</div>
+
+
+        
+   </div>
+   <script src="events.js"></script>
+
+
+</body>
+
+</html>
